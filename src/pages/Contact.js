@@ -10,7 +10,7 @@ import {
   EMAILJS_TEMPLATE_ID,
   EMAILJS_PUBLIC_KEY,
 } from "../config/env/index";
-console.log(EMAILJS_PUBLIC_KEY);
+
 const TextFieldStyled = styled(TextField)(({ theme }) => ({
   margin: "1rem 0",
   "& input": {
@@ -50,10 +50,10 @@ const Contact = () => {
   const handleFormSubmit = () => {
     emailjs
       .sendForm(
-        "service_2mtl43o",
-        "template_bxd8j55",
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         form.current,
-        "3KZ3_QgqlJd986vbW"
+        EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
