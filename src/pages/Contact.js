@@ -92,7 +92,7 @@ const Contact = () => {
           label="Nom"
           id="name"
           name="user_name"
-          defaultValue="test"
+          placeholder="Jean"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start" sx={{ color: "primary.white" }}>
@@ -107,6 +107,7 @@ const Contact = () => {
           label="Adresse e-mail"
           id="email"
           name="user_email"
+          placeholder="GRONDIN"
           sx={{ color: "primary.white" }}
           InputProps={{
             startAdornment: (
@@ -122,6 +123,7 @@ const Contact = () => {
           label="Message"
           id="message"
           name="message"
+          placeholder="Entrer votre message..."
           multiline
           rows={4}
         />
